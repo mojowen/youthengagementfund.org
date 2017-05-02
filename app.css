@@ -14,7 +14,7 @@ h2 {
   text-transform: uppercase;
   color: white;
   background-color: #198dd3;
-  border-radius: 0;
+  border-radius: 40px;
   border: none;
   padding: 0 40px; }
 
@@ -51,10 +51,10 @@ select {
       color: black; }
 
 .landing {
-  background: transparent url(images/landing.png) top left no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/landing.png) top left no-repeat;
   background-size: cover;
   text-align: center;
-  padding: 120px 0 60px; }
+  padding: 120px 0; }
   .landing h1 {
     color: white;
     text-transform: uppercase;
@@ -74,6 +74,10 @@ select {
       display: block;
       background-color: #f0f0f0;
       margin-bottom: 2rem; }
+      .contact form input.half,
+      .contact form textarea.half {
+        width: 49%;
+        display: inline-block; }
     .contact form textarea {
       resize: none;
       height: 120px; }
@@ -82,7 +86,7 @@ select {
       background-color: #198dd3;
       color: white;
       border: none;
-      border-radius: 0;
+      border-radius: 40px;
       margin: 0 auto; }
 
 .about--content {
@@ -95,7 +99,7 @@ select {
   .team--content h2, .team--content p {
     color: white; }
   .team--content img {
-    border-radius: 100%;
+    width: 160px;
     display: block;
     margin: 0 auto; }
 

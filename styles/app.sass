@@ -22,7 +22,7 @@ h2
   text-transform: uppercase
   color: white
   background-color: $light_blue
-  border-radius: 0
+  border-radius: 40px
   border: none
   padding: 0 40px
 
@@ -60,10 +60,10 @@ select
       color: black
 
 .landing
-  background: transparent url(images/landing.png) top left no-repeat
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(images/landing.png) top left no-repeat
   background-size: cover
   text-align: center
-  padding: 120px 0 60px
+  padding: 120px 0
   h1
     color: white
     text-transform: uppercase
@@ -83,6 +83,9 @@ select
       display: block
       background-color: $light_gray
       margin-bottom: 2rem
+      &.half
+        width: 49%
+        display: inline-block
     textarea
       resize: none
       height: 120px
@@ -91,7 +94,7 @@ select
       background-color: $light_blue
       color: white
       border: none
-      border-radius: 0
+      border-radius: 40px
       margin: 0 auto
 
 
@@ -106,7 +109,7 @@ select
   h2, p
     color: white
   img
-    border-radius: 100%
+    width: 160px
     display: block
     margin: 0 auto
 

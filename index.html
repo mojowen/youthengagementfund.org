@@ -7,6 +7,7 @@
   <link rel="stylesheet" type="text/css" href="app.css">
 
   <script type="text/javascript" src="/js/tinyxhr.js"></script>
+  <script src='https://www.google.com/recaptcha/api.js'></script>
 
   <link rel="icon" type="image/png" href="/images/favicon.png" />
 
@@ -28,7 +29,7 @@
       <div class="six columns">
         <a href="/">
           <img src="images/logo.png">
-           | Youth Engagement Fund
+           <span>| Youth Engagement Fund</span>
         </a>
       </div>
       <div class="six columns" style="text-align: right">
@@ -40,7 +41,7 @@
     <div class="row landing_row">
       <div class="twelve columns landing">
         <h1>
-          Better support yout-focused civic
+          Better support youth-focused civic
           <br />engagement organizations.
         </h1>
         <a class="button" href="#search">Find Out How</a>
@@ -60,7 +61,7 @@
       </div>
       <div class="row">
         <div class="six columns">
-          <img src="https://placeholdit.imgix.net/~text?txtsize=33&w=200&h=200&text=photo">
+          <img src="/images/austin.png">
         </div>
         <div class="six columns">
         </div>
@@ -69,9 +70,13 @@
     <div class="row contact" id="contact">
       <div class="twelve columns">
         <h2>Contact Us</h2>
-        <form >
-          <input type="text" name="name" placeholder="Name">
-          <input type="email" name="email" placeholder="Email">
+        <form onsubmit="return validateAndSubmit(this)">
+          <input type="text" class="half" name="first_name" placeholder="Last Name">
+          &nbsp;
+          <input type="text" class="half" name="last_name" placeholder="First Name">
+          <input type="email" class="half"name="email" placeholder="Email">
+          &nbsp;
+          <input type="email" class="half" name="confirm" placeholder="Confirm Email">
           <input type="text" name="subject" placeholder="Subject">
           <textarea name="message" placeholder="Message"></textarea>
           <input class="button" type="submit" value="Send">
@@ -79,6 +84,11 @@
       </div>
     </div>
 
+    <div class="row ">
+      <div class="twelve columns" style="text-align: center">
+        <img src="images/logo_big.png" style="width: 240px;">
+      </div>
+    </div>
     <div class="row footer--brand">
       <div class="twelve columns">
         <a target="_blank" href="http://impactual.com/">
@@ -89,17 +99,6 @@
     </div>
   </div>
 
-  <div id="modal" style="display: none">
-    <div class="modal">
-      <div class="inner">
-        <iframe class="airtable-embed airtable-dynamic-height" src="" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent;" onload="addClose(this)"></iframe>
-        <div class="close">
-          <button onclick="closeForm()">close</button>
-        </div>
-      </div>
-    </div>
-    <div class="overlay" ></div>
-  </div>
   <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
