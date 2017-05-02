@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css?family=Fira+Sans:100,400,400i,600,700");
+@import url(/styles/normalize.css);
+@import url(/styles/skeleton.css);
+body {
+  background-color: #cecece;
+  font-family: 'Fira Sans', sans-serif; }
+
+h2 {
+  font-weight: 100;
+  text-transform: uppercase;
+  font-size: 32px; }
+
+.button {
+  text-transform: uppercase;
+  color: white;
+  background-color: #198dd3;
+  border-radius: 0;
+  border: none;
+  padding: 0 40px; }
+
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="text"],
+input[type="tel"],
+input[type="url"],
+input[type="password"],
+textarea,
+select {
+  border-radius: 0;
+  border: none; }
+
+.container {
+  background-color: white; }
+
+.header {
+  background-color: white; }
+  .header img, .header a {
+    height: 22px;
+    line-height: 22px; }
+  .header img {
+    margin-left: 20px; }
+  .header a {
+    font-size: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 12px 30px;
+    text-decoration: none; }
+    .header a, .header a:hover, .header a:active {
+      color: black; }
+
+.landing {
+  background: transparent url(images/landing.png) top left no-repeat;
+  background-size: cover;
+  text-align: center;
+  padding: 120px 0 60px; }
+  .landing h1 {
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 44px;
+    text-shadow: #666 0px 1px 0px;
+    letter-spacing: 0.75px; }
+
+.contact {
+  text-align: center;
+  padding: 40px 0; }
+  .contact form {
+    padding: 0 100px; }
+    .contact form input,
+    .contact form textarea {
+      width: 100%;
+      display: block;
+      background-color: #f0f0f0;
+      margin-bottom: 2rem; }
+    .contact form textarea {
+      resize: none;
+      height: 120px; }
+    .contact form input[type=submit] {
+      width: 120px;
+      background-color: #198dd3;
+      color: white;
+      border: none;
+      border-radius: 0;
+      margin: 0 auto; }
+
+.about--content {
+  text-align: center; }
+  .about--content h2 {
+    color: #198dd3; }
+
+.team--content {
+  background-color: #0f254e; }
+  .team--content h2, .team--content p {
+    color: white; }
+  .team--content img {
+    border-radius: 100%;
+    display: block;
+    margin: 0 auto; }
+
+.footer--brand {
+  text-align: center; }
+
+.footer--brand {
+  background-color: #9a9a9a;
+  padding: 10px 0 30px; }
+  .footer--brand a {
+    text-decoration: none;
+    color: white; }
+  .footer--brand img {
+    width: 120px;
+    margin-bottom: -25px;
+    margin-left: -9px; }
+
+@media screen and (max-width: 550px) {
+  .submit .form,
+  .submit .submitter {
+    height: auto;
+    margin: 20px 0; }
+  .submit .submitter {
+    padding-top: 20px; }
+  .container {
+    width: 100%;
+    padding: 0;
+    overflow: auto; }
+  .row {
+    padding-left: 16px;
+    padding-right: 16px; }
+    .row.landing_row, .row.header {
+      padding-left: 0;
+      padding-right: 0; }
+  .landing h1 {
+    font-size: 30px; }
+  .contact form {
+    padding: 0 5%; }
+  .about--content .about--content {
+    padding-top: 0; }
+  .about--content img {
+    margin: -10px 0 0; } }

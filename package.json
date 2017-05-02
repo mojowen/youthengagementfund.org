@@ -1,0 +1,36 @@
+{
+  "name": "YouthEngagementFund",
+  "version": "1.0.0",
+  "description": "Yay",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run watch & npm run livereload & npm run static",
+    "watch": "npm run css",
+    "css": "node-sass -w styles/app.sass app.css",
+    "livereload": "livereloadify .",
+    "static": "static-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/mojowen/youthengagementfund.org.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mojowen/youthengagementfund.org/issues"
+  },
+  "homepage": "https://github.com/mojowen/youthengagementfund.org#readme",
+  "dependencies": {
+    "livereloadify": "^2.0.0",
+    "node-sass": "^4.5.2",
+    "static-server": "latest",
+    "skeleton-css": "^2.0.4",
+    "static": "^2.0.0"
+  },
+  "devDependencies": {
+    "node-sass": "^3.7.0",
+    "livereloadify": "^2.0.0",
+    "static-server": "latest",
+    "watchify": "^3.7.0"
+  }
+}
