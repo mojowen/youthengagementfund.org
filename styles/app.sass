@@ -1,22 +1,27 @@
-@import url('https://fonts.googleapis.com/css?family=Fira+Sans:100,400,400i,600,700')
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:100,400,400i,600,700')
 
 @import '/styles/normalize.css'
 @import '/styles/skeleton.css'
 
-$blue: rgb(15, 37, 78)
+$blue: #124770
 $light_blue: rgb(25, 141, 211)
 $gray: rgb(154,154,154)
 $light_gray: rgb(240,240,240)
 
+p
+  color: $blue
 
 body
   background-color: #ddd
   font-family: 'Fira Sans', sans-serif
 
 h2
-  font-weight: 100
-  text-transform: uppercase
+  font-weight: bold
+  text-transform: capitalize
   font-size: 32px
+
+h3
+  font-weight: 100
 
 .row
   padding: 30px 80px
@@ -33,7 +38,8 @@ h2
   background-color: $light_blue
   border-radius: 40px
   border: none
-  padding: 0 40px
+  padding: 3px 40px 0
+  font-weight: normal
 
 input[type="email"],
 input[type="number"],
@@ -57,30 +63,32 @@ select
   .logo
     position: relative
     img
-      margin: 12px 0 0 50px
+      margin: 14px 0 4px 50px
+      height: 30px
     span
       position: absolute
       font-size: 14px
       border-left: 1px solid $blue
       height: 30px
       color: $blue
-      top: -8px
-      left: 120px
+      top: -18px
+      left: 140px
       padding: 0 0 0 10px
       width: 200px
       line-height: 30px
       font-weight: bold
       letter-spacing: 1px
-  img, a
+  a
     height: 22px
     line-height: 22px
+    text-transform: uppercase
   .menu a
     font-size: 12px
-    font-weight: bold
+    font-weight: normal
     text-transform: uppercase
     display: inline-block
     position: relative
-    padding: 12px 34px
+    padding: 16px 34px 8px
     text-decoration: none
     &, &:hover, &:active
       color: light_blue
@@ -115,8 +123,14 @@ select
       background-color: $light_gray
       margin-bottom: 2rem
       &.half
-        width: 49%
+        width: 49.5%
         display: inline-block
+    .form-row
+      .half
+        &:first-child
+          float: left
+        &:last-child
+          float: right
     textarea
       resize: none
       height: 120px
@@ -127,7 +141,7 @@ select
       border: none
       border-radius: 40px
       margin: 0 auto
-
+      font-weight: normal
 
 
 .about--content
@@ -144,8 +158,9 @@ select
   h5
     margin-bottom: 0
     padding-bottom: 0
+    padding-top: 1.5rem
   img
-    width: 160px
+    width: 100%
     display: block
     margin: 0 auto
 

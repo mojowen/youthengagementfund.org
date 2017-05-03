@@ -1,14 +1,20 @@
-@import url("https://fonts.googleapis.com/css?family=Fira+Sans:100,400,400i,600,700");
+@import url("https://fonts.googleapis.com/css?family=Work+Sans:100,400,400i,600,700");
 @import url(/styles/normalize.css);
 @import url(/styles/skeleton.css);
+p {
+  color: #124770; }
+
 body {
   background-color: #ddd;
   font-family: 'Fira Sans', sans-serif; }
 
 h2 {
-  font-weight: 100;
-  text-transform: uppercase;
+  font-weight: bold;
+  text-transform: capitalize;
   font-size: 32px; }
+
+h3 {
+  font-weight: 100; }
 
 .row {
   padding: 30px 80px; }
@@ -24,7 +30,8 @@ h2 {
   background-color: #198dd3;
   border-radius: 40px;
   border: none;
-  padding: 0 40px; }
+  padding: 3px 40px 0;
+  font-weight: normal; }
 
 input[type="email"],
 input[type="number"],
@@ -48,30 +55,32 @@ select {
   .header .logo {
     position: relative; }
     .header .logo img {
-      margin: 12px 0 0 50px; }
+      margin: 14px 0 4px 50px;
+      height: 30px; }
     .header .logo span {
       position: absolute;
       font-size: 14px;
-      border-left: 1px solid #0f254e;
+      border-left: 1px solid #124770;
       height: 30px;
-      color: #0f254e;
-      top: -12px;
-      left: 120px;
+      color: #124770;
+      top: -18px;
+      left: 140px;
       padding: 0 0 0 10px;
       width: 200px;
       line-height: 30px;
       font-weight: bold;
       letter-spacing: 1px; }
-  .header img, .header a {
+  .header a {
     height: 22px;
-    line-height: 22px; }
+    line-height: 22px;
+    text-transform: uppercase; }
   .header .menu a {
     font-size: 12px;
-    font-weight: bold;
+    font-weight: normal;
     text-transform: uppercase;
     display: inline-block;
     position: relative;
-    padding: 12px 34px;
+    padding: 16px 34px 8px;
     text-decoration: none; }
     .header .menu a, .header .menu a:hover, .header .menu a:active {
       color: light_blue; }
@@ -107,8 +116,12 @@ select {
       margin-bottom: 2rem; }
       .contact form input.half,
       .contact form textarea.half {
-        width: 49%;
+        width: 49.5%;
         display: inline-block; }
+    .contact form .form-row .half:first-child {
+      float: left; }
+    .contact form .form-row .half:last-child {
+      float: right; }
     .contact form textarea {
       resize: none;
       height: 120px; }
@@ -118,7 +131,8 @@ select {
       color: white;
       border: none;
       border-radius: 40px;
-      margin: 0 auto; }
+      margin: 0 auto;
+      font-weight: normal; }
 
 .about--content {
   text-align: left; }
@@ -127,15 +141,16 @@ select {
     text-align: center; }
 
 .team--content {
-  background-color: #0f254e;
+  background-color: #124770;
   padding-bottom: 30px; }
   .team--content h2, .team--content p, .team--content h5, .team--content div {
     color: white; }
   .team--content h5 {
     margin-bottom: 0;
-    padding-bottom: 0; }
+    padding-bottom: 0;
+    padding-top: 1.5rem; }
   .team--content img {
-    width: 160px;
+    width: 100%;
     display: block;
     margin: 0 auto; }
 

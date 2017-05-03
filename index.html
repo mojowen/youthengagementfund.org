@@ -69,6 +69,9 @@
         <div class="one columns">&nbsp;</div>
         <div class="three columns">
           <img src="/images/austin.png">
+          <br />
+          <h5>Austin Belali Director</h5>
+          Youth Engagement Fund
         </div>
         <div class="seven columns">
           <p>Austin Belali is Director of the Youth Engagement Fund, where he has moved nearly $4.5 million in aligned and pooled grant-making and established partnerships with major institutional funders to improve youth outcomes and opportunities.</p>
@@ -138,12 +141,14 @@
       <div class="twelve columns">
         <h2>Contact Us</h2>
         <form onsubmit="return validateAndSubmit(this)">
-          <input type="text" class="half" name="first_name" placeholder="First Name">
-          &nbsp;
-          <input type="text" class="half" name="last_name" placeholder="Last Name">
-          <input type="email" class="half"name="email" placeholder="Email">
-          &nbsp;
-          <input type="email" class="half" name="confirm" placeholder="Confirm Email">
+          <div class="form-row">
+            <input type="text" class="half" name="first_name" placeholder="First Name">
+            <input type="text" class="half" name="last_name" placeholder="Last Name">
+          </div>
+          <div class="form-row">
+            <input type="email" class="half"name="email" placeholder="Email">
+            <input type="email" class="half" name="confirm" placeholder="Confirm Email">
+          </div>
           <input type="text" name="subject" placeholder="Subject">
           <textarea name="message" placeholder="Message"></textarea>
           <input class="button" type="submit" value="Send">
