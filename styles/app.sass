@@ -18,6 +18,15 @@ h2
   text-transform: uppercase
   font-size: 32px
 
+.row
+  padding: 30px 80px
+  &.landing_row,
+  &.header
+    padding: 0
+  &.skinny
+    padding-top: 0
+    padding-bottom: 0
+
 .button
   text-transform: uppercase
   color: white
@@ -100,14 +109,19 @@ select
 
 
 .about--content
-  text-align: center
+  text-align: left
   h2
     color: $light_blue
+    text-align: center
 
 .team--content
   background-color: $blue
-  h2, p
+  padding-bottom: 30px
+  h2, p, h5, div
     color: white
+  h5
+    margin-bottom: 0
+    padding-bottom: 0
   img
     width: 160px
     display: block

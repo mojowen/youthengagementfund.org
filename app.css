@@ -10,6 +10,14 @@ h2 {
   text-transform: uppercase;
   font-size: 32px; }
 
+.row {
+  padding: 30px 80px; }
+  .row.landing_row, .row.header {
+    padding: 0; }
+  .row.skinny {
+    padding-top: 0;
+    padding-bottom: 0; }
+
 .button {
   text-transform: uppercase;
   color: white;
@@ -90,14 +98,19 @@ select {
       margin: 0 auto; }
 
 .about--content {
-  text-align: center; }
+  text-align: left; }
   .about--content h2 {
-    color: #198dd3; }
+    color: #198dd3;
+    text-align: center; }
 
 .team--content {
-  background-color: #0f254e; }
-  .team--content h2, .team--content p {
+  background-color: #0f254e;
+  padding-bottom: 30px; }
+  .team--content h2, .team--content p, .team--content h5, .team--content div {
     color: white; }
+  .team--content h5 {
+    margin-bottom: 0;
+    padding-bottom: 0; }
   .team--content img {
     width: 160px;
     display: block;
