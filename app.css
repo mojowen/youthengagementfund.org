@@ -97,6 +97,8 @@ select {
   background-size: cover;
   text-align: center;
   padding: 120px 0; }
+  .landing.report {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/report.jpg) center center no-repeat; }
   .landing h1 {
     color: white;
     text-transform: uppercase;
@@ -142,15 +144,18 @@ select {
     color: #198dd3;
     text-align: center; }
 
+.board-member h5 {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  padding-top: 1.5rem; }
+  .board-member h5:first-child {
+    padding-top: 0; }
+
 .team--content {
   background-color: #124770;
   padding-bottom: 30px; }
   .team--content h2, .team--content p, .team--content h5, .team--content div {
     color: white; }
-  .team--content h5 {
-    margin-bottom: 0;
-    padding-bottom: 0;
-    padding-top: 1.5rem; }
   .team--content img {
     width: 100%;
     display: block;

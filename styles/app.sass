@@ -102,6 +102,8 @@ select
 
 .landing
   background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(images/landing.png) 0 -200px no-repeat
+  &.report
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(images/report.jpg) center center no-repeat
   background-size: cover
   text-align: center
   padding: 120px 0
@@ -152,15 +154,19 @@ select
     color: $light_blue
     text-align: center
 
+.board-member
+  h5
+    margin-bottom: 0
+    padding-bottom: 0
+    padding-top: 1.5rem
+    &:first-child
+      padding-top: 0
+
 .team--content
   background-color: $blue
   padding-bottom: 30px
   h2, p, h5, div
     color: white
-  h5
-    margin-bottom: 0
-    padding-bottom: 0
-    padding-top: 1.5rem
   img
     width: 100%
     display: block
