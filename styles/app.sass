@@ -54,21 +54,41 @@ select
 
 .header
   background-color: white
-
+  .logo
+    position: relative
+    img
+      margin: 12px 0 0 50px
+    span
+      position: absolute
+      font-size: 14px
+      border-left: 1px solid $blue
+      height: 30px
+      color: $blue
+      top: -8px
+      left: 120px
+      padding: 0 0 0 10px
+      width: 200px
+      line-height: 30px
+      font-weight: bold
+      letter-spacing: 1px
   img, a
     height: 22px
     line-height: 22px
-  img
-    margin-left: 20px
-  a
-    font-size: 10px
+  .menu a
+    font-size: 12px
     font-weight: bold
     text-transform: uppercase
     display: inline-block
-    padding: 12px 30px
+    position: relative
+    padding: 12px 34px
     text-decoration: none
     &, &:hover, &:active
-      color: black
+      color: light_blue
+    img
+      width: 20px
+      height: auto
+      margin: 4px 0 0 -28px
+      position: absolute
 
 .landing
   background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(images/landing.png) 0 -200px no-repeat

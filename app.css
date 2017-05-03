@@ -45,20 +45,41 @@ select {
 
 .header {
   background-color: white; }
+  .header .logo {
+    position: relative; }
+    .header .logo img {
+      margin: 12px 0 0 50px; }
+    .header .logo span {
+      position: absolute;
+      font-size: 14px;
+      border-left: 1px solid #0f254e;
+      height: 30px;
+      color: #0f254e;
+      top: -12px;
+      left: 120px;
+      padding: 0 0 0 10px;
+      width: 200px;
+      line-height: 30px;
+      font-weight: bold;
+      letter-spacing: 1px; }
   .header img, .header a {
     height: 22px;
     line-height: 22px; }
-  .header img {
-    margin-left: 20px; }
-  .header a {
-    font-size: 10px;
+  .header .menu a {
+    font-size: 12px;
     font-weight: bold;
     text-transform: uppercase;
     display: inline-block;
-    padding: 12px 30px;
+    position: relative;
+    padding: 12px 34px;
     text-decoration: none; }
-    .header a, .header a:hover, .header a:active {
-      color: black; }
+    .header .menu a, .header .menu a:hover, .header .menu a:active {
+      color: light_blue; }
+    .header .menu a img {
+      width: 20px;
+      height: auto;
+      margin: 4px 0 0 -28px;
+      position: absolute; }
 
 .landing {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/landing.png) 0 -200px no-repeat;
