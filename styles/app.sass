@@ -7,6 +7,7 @@ $blue: #124770
 $light_blue: rgb(25, 141, 211)
 $gray: rgb(154,154,154)
 $light_gray: rgb(240,240,240)
+$cover: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35))
 
 p
   color: $blue
@@ -14,6 +15,9 @@ p
 body
   background-color: #ddd
   font-family: 'Fira Sans', sans-serif
+
+h1
+  text-transform: capitalize
 
 h2
   font-weight: bold
@@ -33,7 +37,7 @@ h3
     padding-bottom: 0
 
 .button
-  text-transform: uppercase
+  text-transform: none
   color: white
   background-color: $light_blue
   border-radius: 40px
@@ -64,29 +68,29 @@ select
     position: relative
     img
       margin: 14px 0 4px 50px
-      height: 30px
+      height: 40px
     span
       position: absolute
-      font-size: 14px
+      font-size: 19px
       border-left: 1px solid $blue
-      height: 30px
+      height: 40px
       color: $blue
-      top: -18px
-      left: 140px
+      top: -30px
+      left: 180px
       padding: 0 0 0 10px
       width: 400px
-      line-height: 30px
+      line-height: 40px
       font-weight: bold
       letter-spacing: 1px
   a
-    height: 22px
-    line-height: 22px
+    height: 40px
+    line-height: 50px
     text-transform: uppercase
   .menu
     text-align: right
     a
       font-size: 12px
-      font-weight: normal
+      font-weight: bold
       text-transform: uppercase
       display: inline-block
       position: relative
@@ -101,9 +105,9 @@ select
         position: absolute
 
 .landing
-  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(images/landing.png) 0 -200px no-repeat
+  background: $cover, url(images/landing.png) 0 -200px no-repeat
   &.report
-    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(images/report.jpg) center center no-repeat
+    background: $cover, url(images/report.jpg) center center no-repeat
   background-size: cover
   text-align: center
   padding: 120px 0
@@ -118,6 +122,8 @@ select
 .contact
   text-align: center
   padding: 40px 0
+  h2
+    color: $light_blue
   form
     padding: 0 100px
     input,
@@ -195,15 +201,17 @@ select
     img
       display: none
   .landing
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/landing.png) top right no-repeat
+    background: $cover, url(images/landing.png) top right no-repeat
 
-@media screen and (max-width: 620px)
+@media screen and (max-width: 740px)
   .header
     .logo img
       margin-left: 12px
     .menu
       width: 100%
       text-align: left
+
+@media screen and (max-width: 620px)
   .team--content
     img
       max-width: 200px

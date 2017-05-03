@@ -8,6 +8,9 @@ body {
   background-color: #ddd;
   font-family: 'Fira Sans', sans-serif; }
 
+h1 {
+  text-transform: capitalize; }
+
 h2 {
   font-weight: bold;
   text-transform: capitalize;
@@ -25,7 +28,7 @@ h3 {
     padding-bottom: 0; }
 
 .button {
-  text-transform: uppercase;
+  text-transform: none;
   color: white;
   background-color: #198dd3;
   border-radius: 40px;
@@ -56,29 +59,29 @@ select {
     position: relative; }
     .header .logo img {
       margin: 14px 0 4px 50px;
-      height: 30px; }
+      height: 40px; }
     .header .logo span {
       position: absolute;
-      font-size: 14px;
+      font-size: 19px;
       border-left: 1px solid #124770;
-      height: 30px;
+      height: 40px;
       color: #124770;
-      top: -18px;
-      left: 140px;
+      top: -30px;
+      left: 180px;
       padding: 0 0 0 10px;
       width: 400px;
-      line-height: 30px;
+      line-height: 40px;
       font-weight: bold;
       letter-spacing: 1px; }
   .header a {
-    height: 22px;
-    line-height: 22px;
+    height: 40px;
+    line-height: 50px;
     text-transform: uppercase; }
   .header .menu {
     text-align: right; }
     .header .menu a {
       font-size: 12px;
-      font-weight: normal;
+      font-weight: bold;
       text-transform: uppercase;
       display: inline-block;
       position: relative;
@@ -93,12 +96,12 @@ select {
         position: absolute; }
 
 .landing {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/landing.png) 0 -200px no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(images/landing.png) 0 -200px no-repeat;
   background-size: cover;
   text-align: center;
   padding: 120px 0; }
   .landing.report {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/report.jpg) center center no-repeat; }
+    background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(images/report.jpg) center center no-repeat; }
   .landing h1 {
     color: white;
     text-transform: uppercase;
@@ -110,6 +113,8 @@ select {
 .contact {
   text-align: center;
   padding: 40px 0; }
+  .contact h2 {
+    color: #198dd3; }
   .contact form {
     padding: 0 100px; }
     .contact form input,
@@ -181,14 +186,16 @@ select {
     .header .menu a img {
       display: none; }
   .landing {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/landing.png) top right no-repeat; } }
+    background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(images/landing.png) top right no-repeat; } }
 
-@media screen and (max-width: 620px) {
+@media screen and (max-width: 740px) {
   .header .logo img {
     margin-left: 12px; }
   .header .menu {
     width: 100%;
-    text-align: left; }
+    text-align: left; } }
+
+@media screen and (max-width: 620px) {
   .team--content img {
     max-width: 200px; }
   .team--content .director {
