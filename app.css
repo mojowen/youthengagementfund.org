@@ -66,7 +66,7 @@ select {
       top: -18px;
       left: 140px;
       padding: 0 0 0 10px;
-      width: 200px;
+      width: 400px;
       line-height: 30px;
       font-weight: bold;
       letter-spacing: 1px; }
@@ -74,21 +74,23 @@ select {
     height: 22px;
     line-height: 22px;
     text-transform: uppercase; }
-  .header .menu a {
-    font-size: 12px;
-    font-weight: normal;
-    text-transform: uppercase;
-    display: inline-block;
-    position: relative;
-    padding: 16px 34px 8px;
-    text-decoration: none; }
-    .header .menu a, .header .menu a:hover, .header .menu a:active {
-      color: light_blue; }
-    .header .menu a img {
-      width: 20px;
-      height: auto;
-      margin: 4px 0 0 -28px;
-      position: absolute; }
+  .header .menu {
+    text-align: right; }
+    .header .menu a {
+      font-size: 12px;
+      font-weight: normal;
+      text-transform: uppercase;
+      display: inline-block;
+      position: relative;
+      padding: 16px 34px 8px;
+      text-decoration: none; }
+      .header .menu a, .header .menu a:hover, .header .menu a:active {
+        color: light_blue; }
+      .header .menu a img {
+        width: 20px;
+        height: auto;
+        margin: 4px 0 0 -28px;
+        position: absolute; }
 
 .landing {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/landing.png) 0 -200px no-repeat;
@@ -168,7 +170,33 @@ select {
     margin-bottom: -25px;
     margin-left: -9px; }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 960px) {
+  .header .menu a {
+    padding: 12px 10px; }
+    .header .menu a img {
+      display: none; }
+  .landing {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/landing.png) top right no-repeat; } }
+
+@media screen and (max-width: 620px) {
+  .header .logo img {
+    margin-left: 12px; }
+  .header .menu {
+    width: 100%;
+    text-align: left; }
+  .team--content img {
+    max-width: 200px; }
+  .team--content .director {
+    margin-bottom: 14px; }
+    .team--content .director .copy {
+      display: none; }
+  .team--content h5 {
+    padding-top: 0.5rem; }
+  .team--content .gap {
+    display: none; }
+  form .form-row input.half {
+    float: none;
+    width: 100%; }
   .submit .form,
   .submit .submitter {
     height: auto;

@@ -74,7 +74,7 @@ select
       top: -18px
       left: 140px
       padding: 0 0 0 10px
-      width: 200px
+      width: 400px
       line-height: 30px
       font-weight: bold
       letter-spacing: 1px
@@ -82,21 +82,23 @@ select
     height: 22px
     line-height: 22px
     text-transform: uppercase
-  .menu a
-    font-size: 12px
-    font-weight: normal
-    text-transform: uppercase
-    display: inline-block
-    position: relative
-    padding: 16px 34px 8px
-    text-decoration: none
-    &, &:hover, &:active
-      color: light_blue
-    img
-      width: 20px
-      height: auto
-      margin: 4px 0 0 -28px
-      position: absolute
+  .menu
+    text-align: right
+    a
+      font-size: 12px
+      font-weight: normal
+      text-transform: uppercase
+      display: inline-block
+      position: relative
+      padding: 16px 34px 8px
+      text-decoration: none
+      &, &:hover, &:active
+        color: light_blue
+      img
+        width: 20px
+        height: auto
+        margin: 4px 0 0 -28px
+        position: absolute
 
 .landing
   background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(images/landing.png) 0 -200px no-repeat
@@ -181,7 +183,36 @@ select
 
 
 
-@media screen and (max-width: 550px)
+@media screen and (max-width: 960px)
+  .header .menu a
+    padding: 12px 10px
+    img
+      display: none
+  .landing
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/landing.png) top right no-repeat
+
+@media screen and (max-width: 620px)
+  .header
+    .logo img
+      margin-left: 12px
+    .menu
+      width: 100%
+      text-align: left
+  .team--content
+    img
+      max-width: 200px
+    .director
+      margin-bottom: 14px
+      .copy
+        display: none
+    h5
+      padding-top: 0.5rem
+    .gap
+      display: none
+  form .form-row
+    input.half
+      float: none
+      width: 100%
   .submit
     .form,
     .submitter
