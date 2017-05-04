@@ -89,6 +89,8 @@ select {
       text-decoration: none; }
       .header .menu a, .header .menu a:hover, .header .menu a:active {
         color: #00c0ff; }
+      .header .menu a.active {
+        color: #123260; }
       .header .menu a img {
         width: 20px;
         height: auto;
