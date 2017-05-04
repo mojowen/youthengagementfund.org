@@ -198,11 +198,16 @@ select {
     .header .menu a img {
       display: none; }
   .landing {
-    background: linear-gradient(rgba(90, 90, 90, 0.75), rgba(90, 90, 90, 0.75)), url(images/landing.png) top right no-repeat; } }
+    background: linear-gradient(rgba(90, 90, 90, 0.75), rgba(90, 90, 90, 0.75)), url(images/landing.png) 100% -100px no-repeat; } }
 
 @media screen and (max-width: 740px) {
+  .landing h1 br {
+    display: none; }
   .header .logo img {
     margin-left: 12px; }
+  .header .logo span {
+    left: 130px;
+    font-size: 12px; }
   .header .menu {
     width: 100%;
     text-align: left; } }

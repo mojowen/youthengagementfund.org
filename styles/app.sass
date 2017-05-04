@@ -216,12 +216,19 @@ select
     img
       display: none
   .landing
-    background: $cover, url(images/landing.png) top right no-repeat
+    background: $cover, url(images/landing.png) 100% -100px no-repeat
 
 @media screen and (max-width: 740px)
+  .landing h1 br
+    display: none
+
   .header
-    .logo img
-      margin-left: 12px
+    .logo
+      img
+        margin-left: 12px
+      span
+        left: 130px
+        font-size: 12px
     .menu
       width: 100%
       text-align: left
